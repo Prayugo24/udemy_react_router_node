@@ -2,6 +2,7 @@ import React from "react";
 import Home from "../views/Home";
 import About from "../views/About";
 import Contact from "../views/Contact";
+import Detail from "../views/Detail";
 import { Route,Routes } from 'react-router-dom'
 
 const Router = () =>{
@@ -11,6 +12,7 @@ const Router = () =>{
           <Route path='/' element={<Home/>} exact />
           <Route path='/about' element={<About/>} exact/>
           <Route path='/contact' element={<Contact/>} exact/>
+          <Route path='/detail/:id' element={<Detail/>} exact/>
         </Routes>
       </React.Fragment>
     )

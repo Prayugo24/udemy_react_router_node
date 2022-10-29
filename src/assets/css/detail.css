@@ -1,0 +1,13 @@
+.container-detail {
+    padding: '0 6rem';
+}
+
+.img {
+    width: 15rem;
+    height: 20rem;
+    margin: 2rem;
+}
+
+.box{
+    display: flex;
+}
