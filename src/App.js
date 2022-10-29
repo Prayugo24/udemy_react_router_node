@@ -1,10 +1,11 @@
 import React from 'react';
 import Home from './views/Home';
+import { Route } from 'react-router-dom'
 
 const App = () =>{
   return(
     <div>
-      <Home></Home>
+      <Route path='/' component={Home}></Route>
     </div>
   )
 }
