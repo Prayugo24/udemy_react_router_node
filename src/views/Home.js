@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import MainLayout from "../layouts/MainLayout";
 import '../assets/css/home.css'
 
 class Home extends Component{
@@ -35,9 +34,8 @@ class Home extends Component{
     render(){
         const { skills } = this.state
         return(
-            <div>
-                <Navbar/>
-                    <h1 style={{paddingLeft:"6rem"}}>Home</h1>
+            <MainLayout>
+                <h1 style={{paddingLeft:"6rem"}}>Home</h1>
                     <div className="container">
                         { skills.map((item) => (
                             <div className="card" key={item.id}>
@@ -46,8 +44,7 @@ class Home extends Component{
                             </div>
                         ))}
                     </div>
-                <Footer/>
-            </div>
+            </MainLayout>
         )
     }
 }
