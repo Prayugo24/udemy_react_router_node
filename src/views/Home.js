@@ -40,9 +40,9 @@ class Home extends Component{
                     <h1 style={{paddingLeft:"6rem"}}>Home</h1>
                     <div className="container">
                         { skills.map((item) => (
-                            <div className="card">
-                                <img className="img" src={"/img/"+item.image} alt={item.description}></img>
-                                <h3>{item.name}</h3>
+                            <div className="card" key={item.id}>
+                                <img  className="img" src={"/img/"+item.image} alt={item.description}></img>
+                                <h3 >{item.name}</h3>
                             </div>
                         ))}
                     </div>
