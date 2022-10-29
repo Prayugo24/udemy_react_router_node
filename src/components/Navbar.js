@@ -1,10 +1,11 @@
 import React from "react";
+import '../assets/css/navbar.css'
 
 const Navbar = () => {
     return(
-        <div>
+        <div className="nav">
             <h1>Kode Akadmeia</h1>
-            <ul>
+            <ul className="myUl">
                 <li>Home</li>
                 <li>About</li>
                 <li>Kontak</li>
@@ -14,3 +15,5 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
